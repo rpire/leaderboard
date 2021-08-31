@@ -19,6 +19,6 @@ const addNew = (leaderboard, name, score, num) => {
   leaderboardItem.appendChild(scoreContainer);
 
   leaderboard.appendChild(leaderboardItem);
-}
+};
 
 export default addNew;
