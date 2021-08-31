@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>READY TO START</h1>
-  <p>
-    Lets add another paragraph just to test if the "start" is working correctly.
-  </p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard</title>
+  </head>
+  <body>
+    <header>
+      <h1>Leaderboard</h1>
+    </header>
+    <main class="flex-box content">
+      <div class="left-container">
+        <div class="flex-box left-header">
+          <h2>Recent scores</h2>
+          <button type="button" id="refresh-btn">Refresh</button>
+        </div>
+        <ul id="leaderboard">
+          <li class="flex-box item even">
+            <span class="item-player">Ruben</span>
+            <span class="item-score">999</span>
+          </li>
+          <li class="flex-box item odd">
+            <span class="item-player">Anto</span>
+            <span class="item-score">775</span>
+          </li>
+          <li class="flex-box item even">
+            <span class="item-player">Freddy</span>
+            <span class="item-score">728</span>
+          </li>
+          <li class="flex-box item odd">
+            <span class="item-player">Kutt</span>
+            <span class="item-score">14</span>
+          </li>
+          <li class="flex-box item even">
+            <span class="item-player">Edna</span>
+            <span class="item-score">0</span>
+          </li>
+        </ul>
+      </div>
+      <form class="flex-box between">
+        <h2>Add your score</h2>
+        <label for="name">
+          <input type="text" name="name" id="name" placeholder="Your name">
+        </label>
+        <label for="score">
+          <input type="number" name="score" id="score" placeholder="Your score">
+        </label>
+        <button type="button" id="submit-btn">Submit</button>
+      </form>
+    </main>
+  </body>
 </html>

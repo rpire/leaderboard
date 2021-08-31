@@ -1,4 +1,84 @@
 body {
-  background: linear-gradient(0deg, #fbb, #bff);
-  background-repeat: no-repeat;
-};
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 50px;
+  margin-left: 10%;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+span {
+  font-size: 18px;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.content {
+  justify-content: space-evenly;
+}
+
+.left-container {
+  width: 35%;
+}
+
+.left-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#refresh-btn {
+  height: 32px;
+  margin-left: 20px;
+}
+
+#leaderboard {
+  border: 2px solid black;
+  padding: 0;
+}
+
+.item {
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.even {
+  background-color: #eee;
+}
+
+.odd {
+  background-color: #fff;
+}
+
+.item-player {
+  margin-left: 20px;
+}
+
+.item-score {
+  margin-right: 20px;
+}
+
+form {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+}
+
+input {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 50px;
+  margin-top: 16px;
+}
+
+#submit-btn {
+  align-self: flex-end;
+  height: 32px;
+}
