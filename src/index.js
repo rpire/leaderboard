@@ -10,14 +10,14 @@ const submitBtn = document.getElementById('submit-btn');
 window.onload = async () => {
   const newScores = await getBoard();
   genBoard(leaderboard, newScores);
-}
+};
 
-refreshBtn.addEventListener('click', () => document.location.reload())
+refreshBtn.addEventListener('click', () => document.location.reload());
 
 submitBtn.addEventListener('click', async () => {
-  let name = document.getElementById('user');
-  let points = document.getElementById('score');
-  let msg = document.getElementById('message');
+  const name = document.getElementById('user');
+  const points = document.getElementById('score');
+  const msg = document.getElementById('message');
   if (name.value.length < 1 || name.value.length > 6) {
     name.style.borderColor = 'red';
     points.style.borderColor = 'black';
@@ -32,9 +32,7 @@ submitBtn.addEventListener('click', async () => {
     msg.innerHTML = '';
     await addNew(name.value, points.value);
     const newScores = await getBoard();
-    console.log(newScores);
     genBoard(leaderboard, newScores);
     document.getElementById('form').reset();
-  }
-  
+  }  
 });
