@@ -34,5 +34,5 @@ submitBtn.addEventListener('click', async () => {
     const newScores = await getBoard();
     genBoard(leaderboard, newScores);
     document.getElementById('form').reset();
-  }  
+  }
 });
