@@ -16,39 +16,23 @@
           <h2>Recent scores</h2>
           <button type="button" id="refresh-btn">Refresh</button>
         </div>
-        <ul id="leaderboard">
-          <li class="flex-box item even">
-            <span class="item-player">Ruben</span>
-            <span class="item-score">999</span>
-          </li>
-          <li class="flex-box item odd">
-            <span class="item-player">Anto</span>
-            <span class="item-score">775</span>
-          </li>
-          <li class="flex-box item even">
-            <span class="item-player">Freddy</span>
-            <span class="item-score">728</span>
-          </li>
-          <li class="flex-box item odd">
-            <span class="item-player">Kutt</span>
-            <span class="item-score">14</span>
-          </li>
-          <li class="flex-box item even">
-            <span class="item-player">Edna</span>
-            <span class="item-score">0</span>
-          </li>
-        </ul>
+        <ul id="leaderboard">Leaderboard loading...</ul>
       </div>
-      <form class="flex-box between">
+      <form id="form" class="flex-box between">
         <h2>Add your score</h2>
-        <label for="name">
-          <input type="text" name="name" id="name" placeholder="Your name">
+        <label for="user">
+          <input type="text" name="user" id="user" placeholder="Your name">
         </label>
         <label for="score">
           <input type="number" name="score" id="score" placeholder="Your score">
         </label>
-        <button type="button" id="submit-btn">Submit</button>
+        <div class="btn-container flex-box between">
+          <small id="message"></small>
+          <button type="button" id="submit-btn">Submit</button>
+        </div>
+        
       </form>
     </main>
+    
   </body>
 </html>
