@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
+    <script src="https://kit.fontawesome.com/f8b4998ade.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="flex-box">
       <h1>Leaderboard</h1>
+      <i class="fas fa-trophy"></i>
     </header>
     <main class="flex-box content">
       <div class="left-container">
         <div class="flex-box left-header">
           <h2>Recent scores</h2>
-          <button type="button" id="refresh-btn">Refresh</button>
+          <button type="button" id="refresh-btn" class="btn">Refresh</button>
         </div>
         <ul id="leaderboard"><li class="item flex-box odd">Leaderboard loading...</li></ul>
       </div>
@@ -28,11 +33,12 @@
         </label>
         <div class="btn-container flex-box between">
           <small id="message"></small>
-          <button type="button" id="submit-btn">Submit</button>
+          <button type="button" id="submit-btn" class="btn">Submit</button>
         </div>
-        
       </form>
     </main>
-    
+    <footer class="flex-box">
+      Rubén D. Pire | 2021
+    </footer>
   </body>
 </html>
