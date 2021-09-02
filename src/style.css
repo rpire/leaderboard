@@ -1,12 +1,25 @@
 body {
+  background: linear-gradient(45deg, black, #333);
+  font-family: monospace;
+  color: white;
   margin: 0;
   padding: 0;
 }
 
+header {
+  align-items: baseline;
+  font-size: 66px;
+  margin-bottom: 80px;
+}
+
+h1,
+h2 {
+  font-family: 'Press Start 2P', cursive;
+}
+
 h1 {
   font-size: 50px;
-  margin-top: 50px;
-  margin-left: 10%;
+  margin: 50px 50px 0 10%;
 }
 
 h2 {
@@ -17,12 +30,17 @@ span {
   font-size: 18px;
 }
 
+i {
+  color: gold;
+}
+
 .flex-box {
   display: flex;
 }
 
 .content {
   justify-content: space-evenly;
+  padding-bottom: 100px;
 }
 
 .left-container {
@@ -34,12 +52,25 @@ span {
   align-items: center;
 }
 
+.btn {
+  background-color: gold;
+  font-family: monospace;
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: goldenrod;
+}
+
 #refresh-btn {
-  height: 32px;
   margin-left: 20px;
 }
 
 #leaderboard {
+  max-height: 474px;
+  overflow-y: scroll;
   border: 2px solid black;
   padding: 0;
 }
@@ -50,11 +81,11 @@ span {
 }
 
 .even {
-  background-color: #eee;
+  background-color: #333;
 }
 
 .odd {
-  background-color: #fff;
+  background-color: #444;
 }
 
 .item-player {
@@ -71,17 +102,31 @@ form {
 }
 
 input {
-  width: 100%;
+  background-color: #252525;
+  color: white;
+  width: 80%;
   height: 25px;
-  border: 1px solid black;
-  margin-bottom: 80px;
-  margin-top: 16px;
+  border: 1px solid white;
+  margin: 16px 10% 80px 10%;
+  transition: 0.5s;
+}
+
+input:hover {
+  border-color: gold;
+}
+
+input:focus {
+  width: 90%;
+  margin: 16px 5% 80px 5%;
+}
+
+input::placeholder {
+  font-family: monospace;
 }
 
 .btn-container {
   justify-content: space-between;
   align-items: center;
-  height: 50px;
 }
 
 #message {
@@ -93,5 +138,42 @@ input {
 
 #submit-btn {
   align-self: flex-end;
-  height: 32px;
+}
+
+footer {
+  justify-content: center;
+  background-color: gold;
+  color: black;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .left-container,
+  form {
+    width: 90%;
+    margin: auto;
+  }
 }
